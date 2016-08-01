@@ -1,3 +1,5 @@
+apply plugin: 'maven'
+
 group 'com.github.rogerp91'
 version '0.0.1'
 
@@ -12,5 +14,14 @@ repositories {
 }
 
 dependencies {
+    compile 'com.github.rogerp91:rpxetor:0.0.1'
+}
 
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
 }
