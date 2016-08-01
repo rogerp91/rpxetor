@@ -4,21 +4,13 @@ apply plugin: 'maven'
 group 'com.github.rogerp91'
 version '0.0.1'
 
-
-repositories {
-    jcenter()
-    maven { url "https://jitpack.io" }
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
 }
 
 dependencies {
     compile 'com.github.rogerp91:rpxetor:0.0.1'
-}
-
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from sourceSets.main.java
-}
-
-artifacts {
-    archives sourcesJar
 }
