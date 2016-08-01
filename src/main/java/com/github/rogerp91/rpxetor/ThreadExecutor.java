@@ -1,4 +1,4 @@
-/*
+package com.github.rogerp91.rpxetor;/*
  * Copyright 2015 Roger Patiño
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,7 +20,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Executor implementation based on ThreadPoolExecutor.
+ * com.github.rogerp91.rpxetor.Executor implementation based on ThreadPoolExecutor.
  * ThreadPoolExecutorConfig:
  *
  * Core pool size: 3. Max pool size: 5. Keep alive time: 120. Time unit:
@@ -47,7 +47,7 @@ public class ThreadExecutor implements Executor {
 	@Override
 	public void run(final Interactor interactor) {
 		if (interactor == null) {
-			throw new IllegalArgumentException("Interactor to execute can't be null");
+			throw new IllegalArgumentException("com.github.rogerp91.rpxetor.Interactor to execute can't be null");
 		}
 		threadPoolexecutor.submit(interactor);
 	}

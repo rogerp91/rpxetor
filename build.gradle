@@ -7,10 +7,5 @@ version '0.0.1'
 allprojects {
     repositories {
         jcenter()
-        maven { url "https://jitpack.io" }
     }
-}
-
-dependencies {
-    compile 'com.github.rogerp91:rpxetor:0.0.1'
 }

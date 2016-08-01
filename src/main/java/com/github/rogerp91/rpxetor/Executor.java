@@ -1,4 +1,4 @@
-/*
+package com.github.rogerp91.rpxetor;/*
  * Copyright 2015 Roger Patiño
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,5 +14,8 @@
  * limitations under the License.
  */
 
-public interface Interactor extends Runnable {
+public interface Executor {
+	
+    public void run(final Interactor interactor);
+    
 }
